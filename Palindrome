@@ -1,0 +1,10 @@
+int palindrome (int x){ //将数字反转使其为回文数
+    int y = 0;
+    while (x > 0)
+    {
+        y *= 10;
+        y += x % 10;
+        x = x / 10;
+    }
+    return y;
+}
